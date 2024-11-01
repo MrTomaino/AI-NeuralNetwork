@@ -119,9 +119,9 @@ def main():
     X_train, X_test, y_train, y_test = generate_data(n_samples=500, noise=0.2)
 
     # Step 2: Define the neural network architecture
-    layer_sizes = [2, 5, 5, 5, 3, 1]  # 2 input features, two hidden layers with 3 and 5 units, and 1 output layer
+    layer_sizes = [2, 3, 5, 1]  # 2 input features, two hidden layers with 3 and 5 units, and 1 output layer
     learning_rate = 0.01        # Learning rate
-    iterations = 10000           # Number of iterations
+    iterations = 1000           # Number of iterations
 
     # Step 3: Train the neural network
     parameters = train_neural_network(X_train, y_train, layer_sizes, learning_rate, iterations)
